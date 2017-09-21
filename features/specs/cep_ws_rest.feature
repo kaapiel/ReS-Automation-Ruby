@@ -1,4 +1,5 @@
 #language:pt
+# encoding: utf-8
 
 @cep @rest @webservices
 Funcionalidade: Cep valido

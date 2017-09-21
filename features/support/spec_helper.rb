@@ -9,7 +9,7 @@ module YAMAN
       YAMAN::Pages::HomePage.new
     end
 
-    def productPage
+    def qaPage
       YAMAN::Pages::QAPage.new
     end
 

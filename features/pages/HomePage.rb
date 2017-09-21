@@ -7,10 +7,8 @@ module YAMAN
     class HomePage < SitePrism::Page
       set_url '/'
       #section :header, YAMAN::Sections::Header, '.headeralign'
-      element :search, '#suggestion-search'
-	  element :searchButton, '#site-topbar > div.wraper-right-icons > form > button'
-
-      
+      element :linkQA, '#text-4 > div > a:nth-child(5)'
+	    
     end
 
   end

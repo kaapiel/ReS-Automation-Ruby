@@ -6,7 +6,6 @@ Funcionalidade: Site Yaman
 	@qa
 	Cenario: Validacao do site Yaman
   
-		Dado que eu estou na pagina principal da Yama
-		Quando eu acesso o rodape da pagina
-		E seleciono a opcao 'QA & Testes'
+		Dado que estou na pagina principal da Yaman
+		Quando seleciono a opcao 'QA & Testes' no rodape
         Entao eu vejo a pagina de testes
