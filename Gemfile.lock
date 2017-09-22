@@ -598,6 +598,7 @@ PLATFORMS
 
 DEPENDENCIES
   calabash-android
+  capybara
   chromedriver-helper
   cucumber
   documentos_br

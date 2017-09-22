@@ -1,5 +1,6 @@
-Dado(/^que estou na home do aplicativo$/) do                                 
-  element_exist("* text:'TrinaguloApp'")
+Dado(/^que estou na home do aplicativo$/) do  
+  start_test_server_in_background                               
+  element_exists "* text:'TrinaguloApp'"
 end                                                                          
                                                                              
 Quando(/^realizo um calculo de triangulo com todos os lados iguais$/) do     
@@ -10,5 +11,5 @@ Quando(/^realizo um calculo de triangulo com todos os lados iguais$/) do
 end                                                                          
                                                                              
 Entao(/^vejo a mensagem 'Equilatero'$/) do                                   
-  element_exist("* text:'O triângulo é Equilátero'")
+  element_exists "* text:'O triângulo é Equilátero'"
 end                                                                          

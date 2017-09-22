@@ -11,6 +11,10 @@ require 'net/https'
 require 'uri'
 require 'nokogiri'
 require 'xml/to/json'
+require 'httparty'
+require 'pry'
+require 'multi_xml'
+#require 'calabash-android/cucumber'
 
 BROWSER = ENV['BROWSER']
 ENVIRONMENT_TYPE = ENV['ENVIRONMENT_TYPE']
