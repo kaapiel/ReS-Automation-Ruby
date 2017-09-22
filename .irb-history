@@ -1,0 +1,43 @@
+reinstall_apps
+start_test_server_in_background
+query("*")
+query("* id:'txtLado1')
+"
+"
+"
+query("* id:'txtLado1"')
+"
+query("
+"
+query("* id:'txtLado1'")
+"
+"
+"
+'
+query("* id:'txtLado1'")
+query("* id:'txtLado1'")
+query("* id: 'txtLado1'")
+enter_text "* id:'txtLado1'", "10"
+enter_text "*id:'txtLado1'", "10"
+enter_text "* id:'txtLado1'", "3"
+query("*")
+cls
+exit
+quit
+reinstall_apps
+quit
+exit
+exit
+start_test_server_in_background
+enter_text "* id:'txtLado1'", "10"
+enter_text "* id:'txtLado2'", "10"
+enter_text "* id:'txtLado3'", "10"
+touch ("* id:'btnCalcular'")
+element_exists("* text:'Equi'")
+element_exists("* text:'Equi'")
+element_exists("* text:"
+"
+'
+"
+)
+)

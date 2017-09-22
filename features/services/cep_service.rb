@@ -7,15 +7,10 @@ module YAMAN
 	class CepCorreiosServices #RESTful Service
         
         def doHttpGetRequest(url, param)
-
-			response = HTTParty.get(url + param)
-			
-			return response
-       
-        end
-
+          response = HTTParty.get(url + param)
+        return response
+           
+      end
     end
-	
   end
-  
 end
