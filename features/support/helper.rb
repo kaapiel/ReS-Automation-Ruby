@@ -1,6 +1,5 @@
 require 'fileutils'
 require 'without_accents'
-require 'calabash-android'
 
 module Helper
     
