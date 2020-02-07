@@ -1,12 +1,7 @@
-# Ruby CircleCI 2.1 configuration file
-#
-# Check https://circleci.com/docs/2.0/ruby/ for more details
-#
-version: 2.1 
-
+version: 2.1
 
 orbs:
-  ruby: circleci/ruby@0.1.2 # Ruby orb registry: https://circleci.com/orbs/registry/orb/circleci/ruby
+  ruby: circleci/ruby:latest
 
 jobs: 
   build: 
@@ -18,6 +13,12 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
+      - sonarcloud/scan
+      orbs:
+        sonarcloud: sonarsource/sonarcloud@1.0.1
 
-# What to do next? Set up a test job. Please see 
-# https://circleci.com/docs/2.0/configuration-reference/, for more  info on how to get started.
+      workflows:
+        main:
+          jobs:
+            - build:
+                context: SonarCloud
