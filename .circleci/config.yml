@@ -10,10 +10,6 @@ jobs:
     steps:
       - checkout
       - run:
-            name: Which bundler?
-            command: bundle -v
-        
-        - run:
             name: Sonar Scan
             command:
         - sonarcloud/scan
