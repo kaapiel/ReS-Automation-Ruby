@@ -1,21 +1,19 @@
 version: 2.1
+jobs:
 
+  build:
+
+    docker:
+      - image: circleci/ruby:latest
+
+    steps:
+      - checkout
+      - sonarcloud/scan
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.1
 
-jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.6.3-stretch-node
-    steps:
-      - checkout
-      - run:
-            name: Sonar Scan
-            command:
-        - sonarcloud/scan
-
-        workflows:
-          main:
-            jobs:
-              - build:
-                  context: SonarCloud
+workflows:
+  main:
+    jobs:
+      - build:
+          context: SonarCloud
