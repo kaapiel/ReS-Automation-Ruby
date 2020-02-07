@@ -9,15 +9,3 @@ jobs:
       - image: circleci/ruby:2.6.3-stretch-node
     steps:
       - checkout
-      - run:
-          name: Which bundler?
-          command: bundle -v
-      - ruby/bundle-install
-      - run: Sonar Scan
-      - sonarcloud/scan
-
-      workflows:
-        main:
-          jobs:
-            - build:
-                context: SonarCloud
