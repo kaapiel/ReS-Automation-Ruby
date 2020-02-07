@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.1
@@ -9,8 +9,14 @@ jobs:
       - image: circleci/ruby:2.6.3-stretch-node
     steps:
       - checkout
-
       - run:
             name: Which bundler?
             command: bundle -v
-        
+        - run: Sonar Scan
+        - sonarcloud/scan
+
+        workflows:
+          main:
+            jobs:
+              - build:
+                  context: SonarCloud
