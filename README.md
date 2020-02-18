@@ -1,6 +1,12 @@
 # Ruby Automation
 A powerful & easy to use Test Automation Framework
 
+### To access SonarCloud data use this link: 
+#### https://sonarcloud.io/dashboard?id=kaapiel_Recruitment-and-Selection-Automation-Cucumber
+
+### To access pipeline and CI data use this link: 
+#### https://circleci.com/gh/kaapiel/ReS-Automation-Ruby
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kaapiel_Recruitment-and-Selection-Automation-Cucumber&metric=alert_status)](https://sonarcloud.io/dashboard?id=kaapiel_Recruitment-and-Selection-Automation-Cucumber)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=kaapiel_Recruitment-and-Selection-Automation-Cucumber&metric=ncloc)](https://sonarcloud.io/dashboard?id=kaapiel_Recruitment-and-Selection-Automation-Cucumber)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=kaapiel_Recruitment-and-Selection-Automation-Cucumber&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=kaapiel_Recruitment-and-Selection-Automation-Cucumber)
